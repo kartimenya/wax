@@ -189,7 +189,7 @@
     margin: 22px auto 0;
   }
   &__filter{
-    margin-top: 40px;
+    margin: 40px 0;
   }
   &__filter-list{
     display: flex;
@@ -216,4 +216,107 @@
       color: #fff;
     }
   }
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    width: 370px;
+    height: 337px;
+    background: #fbfaf8;
+    transition: .3s;
+    &:hover{
+      background: #362f2d;
+      z-index: 3;
+      .projects__item-img{
+        &::before{
+          opacity: .7;
+        }
+        &::after {
+          border-bottom: 20px solid #362f2d;
+       }
+      }
+      .projects__item-icons{
+        svg{
+          opacity: 1;
+        }
+      }
+      .projects__item-name{
+        color: #f2f1f1;
+      }
+      .projects__item-description{
+        color: #c7b299;
+      }
+    }
+  }
+  &__item-img{
+    background: url(../img/project1.jpg) no-repeat center top / cover ;
+    height: 237px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      transition: .3s;
+      opacity: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 20px;
+      bottom: 0;
+      border: 20px solid transparent;
+      border-bottom: 20px solid #fbfaf8;
+      transition: .3s;
+     }
+  }
+  &__item-icons{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 1000;
+
+  }
+  &__item-icons__link{
+    svg{
+      margin: 0 10px;
+      opacity: 0;
+      transition: .3s;
+    }
+    &:hover{
+      svg{
+        fill: #c7b299;
+      }
+    }
+  }
+  &__item-info{
+    padding: 27px;
+  }
+  &__item-name{
+    color: #c7b299;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    transition: .3s;
+  }
+  &__item-description{
+    font-family: 'Montserrat', sans-serif;
+    color: #d1d1d1;
+    font-size: 14px;
+    transition: .3s;
+  }
+  &__btn{
+    margin: 40px auto 0;
+  }
+}
+
+
+.video{
+  background: url(../img/video-bg.jpg) no-repeat center top / cover ;
+  padding: 205px;
 }
