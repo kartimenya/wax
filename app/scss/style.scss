@@ -69,15 +69,17 @@
   &__list{
     display: flex;
   }
+  &__item{
+        margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
   &__link{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    margin-right: 30px;
     transition: .3s;
-    & :last-child{
-      margin-right: auto;
-    }
     &:hover{
       color: #baa690;
     }
@@ -178,5 +180,40 @@
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+  }
+}
+
+.projects{
+  padding: 80px 0;
+  &__paregraph{
+    margin: 22px auto 0;
+  }
+  &__filter{
+    margin-top: 40px;
+  }
+  &__filter-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__filter-item{
+    margin-right: 10px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__filter-link{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #8c8c8c;
+    font-size: 14px;
+    border: 1px solid #ebebeb;
+    padding: 9px 15px;
+    border-radius: 3px;
+    &._active{
+      background: #998675;
+      color: #fff;
+    }
   }
 }
