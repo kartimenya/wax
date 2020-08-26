@@ -8,13 +8,17 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
 </head>
 <body>
 <header class="header">
   <div class="container">
     <div class="header__top">
       <a href="#">
-        <img src="img/logo.png" alt="">
+        <picture>
+          <source srcset="img/mdn-logo.png" media="(max-width: 1000px)">
+          <img src="img/logo.png" alt="">
+        </picture>
       </a>
 
       <div class="header__box">
@@ -69,7 +73,7 @@
         </div>
       </div>
     </div>
-
+</div>
     <div class="header__slider">
       <div class="header__slider-item slider-item">
         <div class="slider-item__info">
@@ -79,8 +83,24 @@
           <a class="slider-item__info-btn btn" href="#">Get Started</a>
         </div>
       </div>
+      <div class="header__slider-item slider-item">
+        <div class="slider-item__info">
+          <p class="slider-item__info-suptitle">Unique and Modern Design</p>
+          <h2 class="slider-item__info-title">Portfolio PSD Template</h2>
+          <p class="slider-item__info-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+          <a class="slider-item__info-btn btn" href="#">Get Started</a>
+        </div>
+      </div>
+      <div class="header__slider-item slider-item">
+        <div class="slider-item__info">
+          <p class="slider-item__info-suptitle">Unique and Modern Design</p>
+          <h2 class="slider-item__info-title">Portfolio PSD Template</h2>
+          <p class="slider-item__info-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+          <a class="slider-item__info-btn btn" href="#">Get Started</a>
+        </div>
+      </div>
     </div>
-  </div>
+
 </header>
 
 <section class="inform">
@@ -357,13 +377,211 @@
 
   </div>
 </section>
+
 <section class="video">
   <div class="container">
-    <h2>Waxom Video Presentation</h2>
-    <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+    <a class="video__play" href="#"><img src="img/play.svg" alt=""></a>
+    <h2 class="video__title title">Waxom Video Presentation</h2>
+    <p class="video__paregraph paregraph-style">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
   </div>
-  <span></span>
+  <span class="video__time">03:26</span>
 </section>
+
+<section class="mobile ">
+  <div class="mobile__container container">
+    <div class="mobile__box">
+      <h3 class="mobile__title title">Excellent for Mobile Devices.</h3>
+      <p class="mobile__paregraph paregraph-style">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+
+      <ul class="mobile__list">
+        <li class="mobile__list-item">Nam liber tempor cum soluta nobis eleifend option;</li>
+        <li class="mobile__list-item">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+        <li class="mobile__list-item">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+        <li class="mobile__list-item">Investigationes demonstraverunt lectores</li>
+      </ul>
+    </div>
+    <img class="mobile__img" src="img/iphone.png" alt="">
+  </div>
+</section>
+
+<section class="statistics">
+  <div class="container">
+    <ul class="statistics__list">
+      <li class="statistics__item">
+        <img src="img/icon-1.png" alt="">
+        <p class="statistics__info">3587</p>
+        <span class="statistics__name">Satisfied Clients</span>
+      </li>
+      <li class="statistics__item">
+        <img src="img/icon-2.png" alt="">
+        <p class="statistics__info">207</p>
+        <span class="statistics__name">Cups of coffee</span>
+      </li>
+      <li class="statistics__item">
+        <img src="img/icon-3.png" alt="">
+        <p class="statistics__info">2500</p>
+        <span class="statistics__name">Blog posts</span>
+      </li>
+      <li class="statistics__item">
+        <img src="img/icon-4.png" alt="">
+        <p class="statistics__info">873</p>
+        <span class="statistics__name">Likes</span>
+      </li>
+      <li class="statistics__item">
+        <img src="img/icon-5.png" alt="">
+        <p class="statistics__info">900</p>
+        <span class="statistics__name">We launched</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="posts">
+  <div class="container">
+    <h2 class="posts__title title">Recent Posts.</h2>
+    <p class="posts__paregraph paregraph-style">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+
+    <div class="posts__slider">
+
+    <div class="posts__item">
+      <div class="posts__item-img">
+        <div class="posts__item-data">
+          <span class="posts__item-number">30</span>
+          <span class="posts__item-month">Sep.</span>
+        </div>
+      </div>
+      <div class="posts__item-text">
+        <h4 class="posts__item-mame">Lorem ipsum dolor sit amet</h4>
+        <p class="posts__item-description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <a class="posts__item-link" href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="posts__item">
+      <div class="posts__item-img">
+        <div class="posts__item-data">
+          <span class="posts__item-number">30</span>
+          <span class="posts__item-month">Sep.</span>
+        </div>
+      </div>
+      <div class="posts__item-text">
+        <h4 class="posts__item-mame">Lorem ipsum dolor sit amet</h4>
+        <p class="posts__item-description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <a class="posts__item-link" href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="posts__item">
+      <div class="posts__item-img">
+        <div class="posts__item-data">
+          <span class="posts__item-number">30</span>
+          <span class="posts__item-month">Sep.</span>
+        </div>
+      </div>
+      <div class="posts__item-text">
+        <h4 class="posts__item-mame">Lorem ipsum dolor sit amet</h4>
+        <p class="posts__item-description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <a class="posts__item-link" href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="posts__item">
+      <div class="posts__item-img">
+        <div class="posts__item-data">
+          <span class="posts__item-number">30</span>
+          <span class="posts__item-month">Sep.</span>
+        </div>
+      </div>
+      <div class="posts__item-text">
+        <h4 class="posts__item-mame">Lorem ipsum dolor sit amet</h4>
+        <p class="posts__item-description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <a class="posts__item-link" href="#">Read More</a>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="brands">
+  <div class="container">
+    <ul class="brands__list">
+      <li class="brands__item">
+        <a href=""><img class="brands__img" src="img/logo-01.png" alt=""></a>
+      </li>
+      <li class="brands__item">
+        <a href=""><img class="brands__img" src="img/logo-02.png" alt=""></a>
+      </li>
+      <li class="brands__item">
+        <a href=""><img class="brands__img" src="img/logo-03.png" alt=""></a>
+      </li>
+      <li class="brands__item">
+        <a href=""><img class="brands__img" src="img/logo-04.png" alt=""></a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__items">
+
+      <div class="footer__item footer__item-1">
+        <a href=""><img src="img/logo.png" alt=""></a>
+        <p class="footer__item-paregraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+        <a class="footer__item-link" href="#">Read More</a>
+      </div>
+
+      <div class="footer__item footer__item-2">
+        <h5 class="footer__item-title">Recent Posts</h5>
+        <ul class="footer__item-list">
+          <li>
+            <span class="footer__item-time">September 08, 2015</span>
+            <p class="footer__item-paregraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+          </li>
+          <li class="_lite">
+            <span class="footer__item-time">September 08, 2015</span>
+            <p class="footer__item-paregraph">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+          </li>
+          <li>
+            <span class="footer__item-time">September 08, 2015</span>
+            <p class="footer__item-paregraph">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item footer__item-3">
+        <h5 class="footer__item-title">Our Twitter</h5>
+        <ul class="footer__item-list">
+          <li>
+            <p class="footer__item-paregraph"><a class="link-teg" href="">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+            <span class="footer__item-time">September 08, 2015</span>
+          </li>
+          <li>
+            <p class="footer__item-paregraph">Mirum est <a class="link-teg" href="">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+            <span class="footer__item-time">September 08, 2015</span>
+          </li>
+          <li>
+            <p class="footer__item-paregraph">Soluta nobis option <a class="link-lite" href="">bit.ly/1Hniso7</a></p>
+            <span class="footer__item-time">September 08, 2015</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item footer__item-4">
+        <h5 class="footer__item-title">Dribbble Widget</h5>
+        <a href="#"><img src="img/photo-foot1.jpg" alt=""></a>
+        <a href="#"><img src="img/photo-foot2.jpg" alt=""></a>
+        <a href="#"><img src="img/photo-foot3.jpg" alt=""></a>
+        <a href="#"><img src="img/photo-foot4.jpg" alt=""></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
