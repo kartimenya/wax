@@ -41,6 +41,12 @@ body{
   font-weight: 700;
   text-align: center;
 }
+  @media (max-width: 650px) {
+    .title{
+      font-size: 25px;
+    }
+
+  }
 .paregraph-style{
   color: #8c8c8c;
   font-size: 16px;

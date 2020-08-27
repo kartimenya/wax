@@ -14,9 +14,9 @@
 <header class="header">
   <div class="container">
     <div class="header__top">
-      <a href="#">
+      <a class="header__logo" href="#">
         <picture>
-          <source srcset="img/mdn-logo.png" media="(max-width: 1000px)">
+          <source srcset="img/mdn-logo.png" media="(max-width: 1070px)">
           <img src="img/logo.png" alt="">
         </picture>
       </a>
@@ -24,24 +24,26 @@
       <div class="header__box">
         <nav class="header__menu menu">
           <div class="menu__burger">
-
+            <span></span>
           </div>
-          <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="">About Us</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Portfolio</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Features</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Blog</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Pricing</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Shortcodes</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
-          </ul>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="">About Us</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Portfolio</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Features</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Blog</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Pricing</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Shortcodes</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+            </ul>
+          </div>
         </nav>
 
         <div class="header__icons">
-          <a class="header__icon" href="#">
+          <a class="header__icon header__icon-card" href="#">
 
-            <svg class="svg" viewBox="0 0 512 512" fill="#fff" style="width: 24px;">
+            <svg class="svg" viewBox="0 0 512 512" fill="#fff" width = "24" >
             		<path d="M465.211,473.784l-35.068-319.999c-1.918-17.507-16.646-30.708-34.257-30.708h-26.656v-9.846
             			C369.231,50.795,318.435,0,256,0S142.769,50.795,142.769,113.231v9.846h-26.656c-17.611,0-32.339,13.202-34.257,30.708
             			l-35.068,320c-1.064,9.722,2.069,19.475,8.596,26.757C61.911,507.824,71.265,512,81.045,512h349.91
@@ -60,7 +62,7 @@
 
           <a class="header__icon" href="#">
 
-            <svg viewBox="0 0 192.904 192.904" fill="#fff"  style="width: 24px;">
+            <svg viewBox="0 0 192.904 192.904" fill="#fff"  width = "24">
             <path d="M190.707,180.101l-47.078-47.077c11.702-14.072,18.752-32.142,18.752-51.831C162.381,36.423,125.959,0,81.191,0
             	C36.422,0,0,36.423,0,81.193c0,44.767,36.422,81.187,81.191,81.187c19.688,0,37.759-7.049,51.831-18.751l47.079,47.078
             	c1.464,1.465,3.384,2.197,5.303,2.197c1.919,0,3.839-0.732,5.304-2.197C193.637,187.778,193.637,183.03,190.707,180.101z M15,81.193
@@ -74,7 +76,8 @@
       </div>
     </div>
 </div>
-    <div class="header__slider">
+
+    <div  class="header__slider">
       <div class="header__slider-item slider-item">
         <div class="slider-item__info">
           <p class="slider-item__info-suptitle">Unique and Modern Design</p>
@@ -106,26 +109,39 @@
 <section class="inform">
   <div class="container">
     <div class="inform__items">
+
       <div class="inform__item">
-        <img class="inform__item-img" src="img/info-icon-1.png" alt="">
+        <div class="inform__item-img">
+          <img  src="img/info-icon-1.png" alt="">
+        </div>
         <h4 class="inform__item-title">Web & App Design</h4>
         <p class="inform__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
       </div>
+
       <div class="inform__item">
-        <img src="img/info-icon-2.png" alt="">
+        <div class="inform__item-img">
+          <img src="img/info-icon-2.png" alt="">
+        </div>
         <h4 class="inform__item-title">Web & App Design</h4>
         <p class="inform__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
       </div>
+
       <div class="inform__item">
-        <img src="img/info-icon-3.png" alt="">
+        <div class="inform__item-img">
+          <img src="img/info-icon-3.png" alt="">
+        </div>
         <h4 class="inform__item-title">Web & App Design</h4>
         <p class="inform__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
       </div>
+
       <div class="inform__item">
-        <img src="img/info-icon-4.png" alt="">
+        <div class="inform__item-img">
+          <img src="img/info-icon-4.png" alt="">
+        </div>
         <h4 class="inform__item-title">Web & App Design</h4>
         <p class="inform__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
       </div>
+
     </div>
   </div>
 </section>
@@ -387,7 +403,7 @@
   <span class="video__time">03:26</span>
 </section>
 
-<section class="mobile ">
+<section  class="mobile ">
   <div class="mobile__container container">
     <div class="mobile__box">
       <h3 class="mobile__title title">Excellent for Mobile Devices.</h3>
@@ -444,7 +460,7 @@
     <div class="posts__slider">
 
     <div class="posts__item">
-      <div class="posts__item-img">
+      <div class="posts__item-img" style="background-image: url(../img/post1.jpg)" >
         <div class="posts__item-data">
           <span class="posts__item-number">30</span>
           <span class="posts__item-month">Sep.</span>
@@ -458,7 +474,7 @@
     </div>
 
     <div class="posts__item">
-      <div class="posts__item-img">
+      <div class="posts__item-img" style="background-image: url(../img/post2.jpg)">
         <div class="posts__item-data">
           <span class="posts__item-number">30</span>
           <span class="posts__item-month">Sep.</span>
@@ -472,7 +488,7 @@
     </div>
 
     <div class="posts__item">
-      <div class="posts__item-img">
+      <div class="posts__item-img" style="background-image: url(../img/post3.jpg)">
         <div class="posts__item-data">
           <span class="posts__item-number">30</span>
           <span class="posts__item-month">Sep.</span>
@@ -486,7 +502,21 @@
     </div>
 
     <div class="posts__item">
-      <div class="posts__item-img">
+      <div class="posts__item-img" style="background-image: url(../img/post4.jpg)">
+        <div class="posts__item-data">
+          <span class="posts__item-number">30</span>
+          <span class="posts__item-month">Sep.</span>
+        </div>
+      </div>
+      <div class="posts__item-text">
+        <h4 class="posts__item-mame">Lorem ipsum dolor sit amet</h4>
+        <p class="posts__item-description">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <a class="posts__item-link" href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="posts__item">
+      <div class="posts__item-img" style="background-image: url(../img/post5.jpg)">
         <div class="posts__item-data">
           <span class="posts__item-number">30</span>
           <span class="posts__item-month">Sep.</span>
