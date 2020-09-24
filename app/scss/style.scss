@@ -54,14 +54,15 @@
     }
   }
   &__slider{
-    margin-top: 160px;
-    height: 60vh;
-    margin-top: 10vh;
+    padding: 0 15px;
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
     .slick-arrow{
       background: none;
       border: none;
       position: absolute;
-      top: 20%;
+      top: 35%;
       z-index: 2;
       cursor: pointer;
       z-index: 20;
@@ -72,32 +73,32 @@
     .header__slider-next{
       right: 50px;
     }
-    .header__slider-btn{
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      .slick-active{
-        button{
-          background: transparent;
-          border: 2px solid #cfbeaa;
-          width: 12px;
-          height: 12px;
-        }
-      }
-      button{
-        font-size: 0;
-        border: 2px solid transparent;
-        background: #908f8e;
-        padding: 0;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        margin: 0 5px;
-      }
+  }
+}
+.header__slider-btn{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  .slick-active{
+    button{
+      background: transparent;
+      border: 2px solid #cfbeaa;
+      width: 12px;
+      height: 12px;
     }
+  }
+  button{
+    font-size: 0;
+    border: 2px solid transparent;
+    background: #908f8e;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
   }
 }
 .slider-item__info-suptitle{
@@ -173,12 +174,14 @@
       background: #2a0101;
       width: 250px;
       height: 100vh;
-      z-index: 1000;
+      z-index: 100;
+      transition: .4s;
     }
     &__body.active {
       left: 0%;
     }
     &__list{
+      margin-top: 55px;
       flex-direction: column;
       align-items: center;
     }
@@ -197,30 +200,50 @@
     left: 15px;
     width: 30px;
     height: 20px;
-  }
-  .menu__burger::before, .menu__burger::after {
-    content: "";
-    background: #fff;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-  }
-  .menu__burger::before {
-    top: 0;
-    transition: 0.3s;
-  }
-  .menu__burger::after {
-    bottom: 0;
-    transition: 0.3s;
-  }
-  .menu__burger span {
-    position: absolute;
-    background: #fff;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    top: 9px;
-    transition: 0.3s;
+    z-index: 110;
+
+    &::before, &::after {
+      content: "";
+      background: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+    }
+    &::before {
+      top: 0;
+      transition: 0.3s;
+    }
+    &::after {
+      bottom: 0;
+      transition: 0.3s;
+    }
+    & span {
+      position: absolute;
+      background: #fff;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: 0.4s;
+    }
+    &.active{
+      position: fixed;
+      &::before, &::after{
+        background: #fff;
+      }
+      &::before{
+        transform: rotate(45deg);
+        top: 9px;
+      }
+      &::after{
+
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+      span{
+        transform: scale(0);
+      }
+    }
   }
 }
 
@@ -449,7 +472,9 @@
     }
   }
   &__item-img{
-    background: url(../img/project1.jpg) no-repeat center top / cover ;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 237px;
     position: relative;
     &::before{
